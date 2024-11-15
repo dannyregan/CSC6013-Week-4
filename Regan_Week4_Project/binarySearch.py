@@ -1,6 +1,7 @@
 # Accepts an array (A), starting index (start), final index (end), and element to search for (k). Returns the index of the element k or returns None if it doesn't exist.
 def binarySearch(A, start, end, k):
     mid = (start + end) // 2
+    print(f"Subarray: {A[start:end+1]}. Mid = {A[mid]}")
     if (start > end):
         return None
     elif (A[mid] == k):
